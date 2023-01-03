@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Svt\Desktop\landscape\land\CMakeFiles\d846940d441f7b392a21ed79f399722f\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{17831D77-1415-35D9-B7B4-19E98D50F847}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

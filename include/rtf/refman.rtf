@@ -1,0 +1,956 @@
+{\rtf1\ansi\ansicpg1251\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset204\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset204\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset204\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment My Project }My Project}
+{\comment \'D1\'EE\'E7\'E4\'E0\'ED\'EE \'F1\'E8\'F1\'F2\'E5\'EC\'EE\'E9 doxygen 1.9.5.}
+{\creatim \yr2023\mo1\dy4\hr2\min16\sec0}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt My Project}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+\'C2\'E5\'F0\'F1\'E8\'FF \par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt \'D1\'F0 4 \'DF\'ED\'E2 2023 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'CE\'E3\'EB\'E0\'E2\'EB\'E5\'ED\'E8\'E5\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'E3\'F0\'F3\'EF\'EF\par \pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'E3\'F0\'F3\'EF\'EF}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'C3\'F0\'F3\'EF\'EF\'FB\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CF\'EE\'EB\'ED\'FB\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'E3\'F0\'F3\'EF\'EF.}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+\'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8\tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EA\'EB\'E0\'F1\'F1\'EE\'E2\par \pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC \'EA\'EB\'E0\'F1\'F1\'EE\'E2}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CA\'EB\'E0\'F1\'F1\'FB \'F1 \'E8\'F5 \'EA\'F0\'E0\'F2\'EA\'E8\'EC \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\'EC.}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Camera} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CA\'EB\'E0\'F1\'F1 \'EA\'E0\'EC\'E5\'F0\'FB })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Shader} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2\par \pard\plain 
+{\tc \v \'D1\'EF\'E8\'F1\'EE\'EA \'F4\'E0\'E9\'EB\'EE\'E2}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'D4\'E0\'E9\'EB\'FB\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid \'CF\'EE\'EB\'ED\'FB\'E9 \'F1\'EF\'E8\'F1\'EE\'EA \'E4\'EE\'EA\'F3\'EC\'E5\'ED\'F2\'E8\'F0\'EE\'E2\'E0\'ED\'ED\'FB\'F5 \'F4\'E0\'E9\'EB\'EE\'E2.}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b Camera.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b ShaderProgram.h} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'C3\'F0\'F3\'EF\'EF\'FB{\tc \v \'C3\'F0\'F3\'EF\'EF\'FB}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8\par \pard\plain 
+{\tc\tcl2 \v \'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8}
+{\xe \v \'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C4\'E0\'ED\'ED\'FB\'E9 \'EC\'EE\'E4\'F3\'EB\'FC, \'EF\'F0\'E5\'E4\'ED\'E0\'E7\'ED\'E0\'F7\'E5\'ED \'E4\'EB\'FF \'E7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'FF \'F1\'E5\'F2\'EA\'E8. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b vertexGridPlaceholder} (int width, int height, unsigned char *data, unsigned bytePerPixel)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E8\'ED\'E8\'F6\'E8\'E0\'EB\'E8\'E7\'E0\'F6\'E8\'E8 \'EC\'E0\'F1\'F1\'E8\'E2\'E0 vertices. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b indicesGridPlaceholder} (int width, int height, int rez)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E8\'ED\'E8\'F6\'E8\'E0\'EB\'E8\'E7\'E0\'F6\'E8\'E8 \'EC\'E0\'F1\'F1\'E8\'E2\'E0 indices. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b VAO_Setup} (){\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'FF \'ED\'E0\'F1\'F2\'F0\'EE\'E9\'EA\'E8 \'CE\'E1\'FA\'E5\'EA\'F2\'E0 \'EC\'E0\'F1\'F1\'E8\'E2\'E0 \'E2\'E5\'F0\'F8\'E8\'ED (VAO) \'ED\'E0 \'E3\'F0\'E0\'F4\'E8\'F7\'E5\'F1\'EA\'EE\'EC \'EF\'F0\'EE\'F6\'E5\'F1\'F1\'EE\'F0\'E5. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b visualisationGrip} (const int numStrips, const int numTrisPerStrip)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E2\'E8\'E7\'F3\'E0\'EB\'E8\'E7\'E0\'F6\'E8\'E8 \'F1\'E5\'F2\'EA\'E8 \'EF\'EE\'EB\'EE\'F1\'F3 \'E7\'E0 \'EF\'EE\'EB\'EE\'F1\'EE\'E9. }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C4\'E0\'ED\'ED\'FB\'E9 \'EC\'EE\'E4\'F3\'EB\'FC, \'EF\'F0\'E5\'E4\'ED\'E0\'E7\'ED\'E0\'F7\'E5\'ED \'E4\'EB\'FF \'E7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'FF \'F1\'E5\'F2\'EA\'E8. \par
+}{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+}{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'E8\par
+\pard\plain 
+{\xe \v indicesGridPlaceholder\:\'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8}
+{\xe \v \'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8\:indicesGridPlaceholder}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void indicesGridPlaceholder (int  {\i width}, int  {\i height}, int  {\i rez})}}
+\par
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E8\'ED\'E8\'F6\'E8\'E0\'EB\'E8\'E7\'E0\'F6\'E8\'E8 \'EC\'E0\'F1\'F1\'E8\'E2\'E0 indices. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i width,height} \cell }{\'EA\'EE\'EB\'E8\'F7\'E5\'F1\'F2\'E2\'EE \'EA\'EB\'E5\'F2\'EE\'EA \'E2 \'E2\'FB\'F1\'EE\'F2\'F3 \'E8 \'F8\'E8\'F0\'E8\'ED\'F3 \'F1\'E5\'F2\'EA\'E8 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i rez} \cell }{\'F8\'E0\'E3, \'F1 \'EA\'EE\'F2\'EE\'F0\'FB\'EC \'ED\'F3\'E6\'ED\'EE \'E7\'E0\'EF\'EE\'EB\'ED\'FF\'F2\'FC \'EC\'E0\'F1\'F1\'E8\'E2 indices \cell }
+{\row }
+}
+}}
+{\xe \v vertexGridPlaceholder\:\'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8}
+{\xe \v \'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8\:vertexGridPlaceholder}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void vertexGridPlaceholder (int  {\i width}, int  {\i height}, unsigned char *  {\i data}, unsigned  {\i bytePerPixel})}}
+\par
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E8\'ED\'E8\'F6\'E8\'E0\'EB\'E8\'E7\'E0\'F6\'E8\'E8 \'EC\'E0\'F1\'F1\'E8\'E2\'E0 vertices. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i width,height} \cell }{\'EA\'EE\'EB\'E8\'F7\'E5\'F1\'F2\'E2\'EE \'EA\'EB\'E5\'F2\'EE\'EA \'E2 \'E2\'FB\'F1\'EE\'F2\'F3 \'E8 \'F8\'E8\'F0\'E8\'ED\'F3 \'F1\'E5\'F2\'EA\'E8 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i data} \cell }{\'EC\'E0\'F1\'F1\'E8\'E2 \'F1 \'EF\'E8\'EA\'F1\'E5\'EB\'FC\'ED\'FB\'EC\'E8 \'E4\'E0\'ED\'ED\'FB\'EC\'E8 \'EA\'E0\'F0\'F2\'FB \'E2\'FB\'F1\'EE\'F2 \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i bytePerPixel} \cell }{\'E1\'E0\'E9\'F2 \'EF\'E8\'EA\'F1\'E5\'EB\'FF \'E2 \'EF\'E5\'F0\'F1\'EF\'E5\'EA\'F2\'E8\'E2\'E5 \cell }
+{\row }
+}
+}}
+{\xe \v visualisationGrip\:\'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8}
+{\xe \v \'C7\'E0\'EF\'EE\'EB\'ED\'E5\'ED\'E8\'E5 \'F1\'E5\'F2\'EA\'E8\:visualisationGrip}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void visualisationGrip (const int  {\i numStrips}, const int  {\i numTrisPerStrip})}}
+\par
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'D4\'F3\'ED\'EA\'F6\'E8\'FF \'E2\'E8\'E7\'F3\'E0\'EB\'E8\'E7\'E0\'F6\'E8\'E8 \'F1\'E5\'F2\'EA\'E8 \'EF\'EE\'EB\'EE\'F1\'F3 \'E7\'E0 \'EF\'EE\'EB\'EE\'F1\'EE\'E9. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+\'C0\'F0\'E3\'F3\'EC\'E5\'ED\'F2\'FB\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i numStrips} \cell }{\'ED\'EE\'EC\'E5\'F0 \'EF\'EE\'EB\'EE\'F1\'FB \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i numTrisPerStrip} \cell }{\'EA\'EE\'EB\'E8\'F7\'E5\'F1\'F2\'E2\'EE \'F2\'F0\'E5\'F3\'E3\'EE\'EB\'FC\'ED\'E8\'EA\'EE\'E2, \'E8\'E7 \'EA\'EE\'F2\'EE\'F0\'FB\'F5 \'E1\'F3\'E4\'E5\'F2 \'F1\'EE\'F1\'F2\'EE\'FF\'F2\'FC \'EF\'EE\'EB\'EE\'F1\'E0 \cell }
+{\row }
+}
+}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'CA\'EB\'E0\'F1\'F1\'FB{\tc \v \'CA\'EB\'E0\'F1\'F1\'FB}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 Camera\par \pard\plain 
+{\tc\tcl2 \v Camera}
+{\xe \v Camera}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CA\'EB\'E0\'F1\'F1 \'EA\'E0\'EC\'E5\'F0\'FB }}\par
+{
+{\f2 #include <Camera.h>}}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Camera} (glm::vec3 position=glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3 up=glm::vec3(0.0f, 1.0f, 0.0f), GLfloat yaw=YAW, GLfloat pitch=PITCH)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Camera} (GLfloat posX, GLfloat posY, GLfloat posZ, GLfloat upX, GLfloat upY, GLfloat upZ, GLfloat yaw, GLfloat pitch)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+glm::mat4 {\b GetViewMatrix} ()\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ProcessKeyboard} (Movement_Direction direction, GLfloat deltaTime)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ProcessMouseMovement} (GLfloat xoffset, GLfloat yoffset, GLboolean constrainPitch=true)\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b ProcessMouseScroll} (GLfloat yoffset)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'E0\'F2\'F0\'E8\'E1\'F3\'F2\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+glm::vec3 {\b Position}{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+glm::vec3 {\b Front}{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+glm::vec3 {\b Up}{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+glm::vec3 {\b Right}{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+glm::vec3 {\b WorldUp}{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+GLfloat {\b Yaw}{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+GLfloat {\b Pitch}{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+GLfloat {\b MovementSpeed}{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+GLfloat {\b MouseSensitivity}{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+GLfloat {\b Zoom}{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CF\'EE\'E4\'F0\'EE\'E1\'ED\'EE\'E5 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'E5\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'CA\'EB\'E0\'F1\'F1 \'EA\'E0\'EC\'E5\'F0\'FB \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'C0\'E1\'F1\'F2\'F0\'E0\'EA\'F2\'ED\'FB\'E9 \'EA\'EB\'E0\'F1\'F1 \'EA\'E0\'EC\'E5\'F0\'FB, \'EA\'EE\'F2\'EE\'F0\'FB\'E9 \'EE\'E1\'F0\'E0\'E1\'E0\'F2\'FB\'E2\'E0\'E5\'F2 \'E2\'F5\'EE\'E4\'ED\'FB\'E5 \'E4\'E0\'ED\'ED\'FB\'E5 \'E8 \'E2\'FB\'F7\'E8\'F1\'EB\'FF\'E5\'F2 \'F1\'EE\'EE\'F2\'E2\'E5\'F2\'F1\'F2\'E2\'F3\'FE\'F9\'E8\'E5 \'F3\'E3\'EB\'FB \'DD\'E9\'EB\'E5\'F0\'E0, \'E2\'E5\'EA\'F2\'EE\'F0\'FB \'E8 \'EC\'E0\'F2\'F0\'E8\'F6\'FB \'E4\'EB\'FF \'E8\'F1\'EF\'EE\'EB\'FC\'E7\'EE\'E2\'E0\'ED\'E8\'FF \'E2 OpenGL \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0(\'FB)\par
+\pard\plain 
+{\xe \v Camera\:Camera}
+{\xe \v Camera\:Camera}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Camera::Camera (glm::vec3  {\i position} = {\f2 glm::vec3(0.0f,\~ 0.0f,\~ 0.0f)}, glm::vec3  {\i up} = {\f2 glm::vec3(0.0f,\~ 1.0f,\~ 0.0f)}, GLfloat  {\i yaw} = {\f2 YAW}, GLfloat  {\i pitch} = {\f2 PITCH}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'F1 \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'E0\'EC\'E8 \'E2\'E5\'EA\'F2\'EE\'F0\'EE\'E2 \par
+}}
+{\xe \v Camera\:Camera}
+{\xe \v Camera\:Camera}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Camera::Camera (GLfloat  {\i posX}, GLfloat  {\i posY}, GLfloat  {\i posZ}, GLfloat  {\i upX}, GLfloat  {\i upY}, GLfloat  {\i upZ}, GLfloat  {\i yaw}, GLfloat  {\i pitch}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'F1 \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'E0\'EC\'E8 \'F1\'EA\'E0\'EB\'FF\'F0\'ED\'FB\'F5 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E9 \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CC\'E5\'F2\'EE\'E4\'FB\par
+\pard\plain 
+{\xe \v GetViewMatrix\:Camera}
+{\xe \v Camera\:GetViewMatrix}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+glm::mat4 Camera::GetViewMatrix (){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'E2\'EE\'E7\'E2\'F0\'E0\'F9\'E0\'E5\'F2 \'EC\'E0\'F2\'F0\'E8\'F6\'F3 \'E2\'E8\'E4\'E0, \'F0\'E0\'F1\'F1\'F7\'E8\'F2\'E0\'ED\'ED\'F3\'FE \'F1 \'E8\'F1\'EF\'EE\'EB\'FC\'E7\'EE\'E2\'E0\'ED\'E8\'E5\'EC \'F3\'E3\'EB\'EE\'E2 \'DD\'E9\'EB\'E5\'F0\'E0 \'E8 \'EC\'E0\'F2\'F0\'E8\'F6\'FB LookAt \par
+}}
+{\xe \v ProcessKeyboard\:Camera}
+{\xe \v Camera\:ProcessKeyboard}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Camera::ProcessKeyboard (Movement_Direction  {\i direction}, GLfloat  {\i deltaTime}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'EE\'E1\'F0\'E0\'E1\'E0\'F2\'FB\'E2\'E0\'E5\'F2 \'E2\'E2\'EE\'E4, \'EF\'EE\'EB\'F3\'F7\'E5\'ED\'ED\'FB\'E9 \'EE\'F2 \'EB\'FE\'E1\'EE\'E9 \'F1\'E8\'F1\'F2\'E5\'EC\'FB \'E2\'E2\'EE\'E4\'E0, \'EF\'EE\'E4\'EE\'E1\'ED\'EE\'E9 \'EA\'EB\'E0\'E2\'E8\'E0\'F2\'F3\'F0\'E5. \'CF\'F0\'E8\'ED\'E8\'EC\'E0\'E5\'F2 \'E2\'F5\'EE\'E4\'ED\'EE\'E9 \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0 \'E2 \'E2\'E8\'E4\'E5 \'EE\'EF\'F0\'E5\'E4\'E5\'EB\'FF\'E5\'EC\'EE\'E3\'EE \'EA\'E0\'EC\'E5\'F0\'EE\'E9 \'EF\'E5\'F0\'E5\'F7\'E8\'F1\'EB\'E5\'ED\'E8\'FF (\'F7\'F2\'EE\'E1\'FB \'E0\'E1\'F1\'F2\'F0\'E0\'E3\'E8\'F0\'EE\'E2\'E0\'F2\'FC \'E5\'E3\'EE \'EE\'F2 \'EE\'EA\'EE\'ED\'ED\'FB\'F5 \'F1\'E8\'F1\'F2\'E5\'EC) \par
+}}
+{\xe \v ProcessMouseMovement\:Camera}
+{\xe \v Camera\:ProcessMouseMovement}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Camera::ProcessMouseMovement (GLfloat  {\i xoffset}, GLfloat  {\i yoffset}, GLboolean  {\i constrainPitch} = {\f2 true}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'EE\'E1\'F0\'E0\'E1\'E0\'F2\'FB\'E2\'E0\'E5\'F2 \'E2\'E2\'EE\'E4, \'EF\'EE\'EB\'F3\'F7\'E5\'ED\'ED\'FB\'E9 \'EE\'F2 \'F1\'E8\'F1\'F2\'E5\'EC\'FB \'E2\'E2\'EE\'E4\'E0 \'F1 \'EF\'EE\'EC\'EE\'F9\'FC\'FE \'EC\'FB\'F8\'E8. \'CE\'E6\'E8\'E4\'E0\'E5\'F2 \'E7\'ED\'E0\'F7\'E5\'ED\'E8\'E5 \'F1\'EC\'E5\'F9\'E5\'ED\'E8\'FF \'EA\'E0\'EA \'E2 \'ED\'E0\'EF\'F0\'E0\'E2\'EB\'E5\'ED\'E8\'E8 x, \'F2\'E0\'EA \'E8 \'E2 \'ED\'E0\'EF\'F0\'E0\'E2\'EB\'E5\'ED\'E8\'E8 y. \par
+}}
+{\xe \v ProcessMouseScroll\:Camera}
+{\xe \v Camera\:ProcessMouseScroll}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void Camera::ProcessMouseScroll (GLfloat  {\i yoffset}){\f2 [inline]}}}
+\par
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\'EE\'E1\'F0\'E0\'E1\'E0\'F2\'FB\'E2\'E0\'E5\'F2 \'E2\'F5\'EE\'E4\'ED\'FB\'E5 \'E4\'E0\'ED\'ED\'FB\'E5, \'EF\'EE\'EB\'F3\'F7\'E5\'ED\'ED\'FB\'E5 \'EE\'F2 \'F1\'EE\'E1\'FB\'F2\'E8\'FF \'EA\'EE\'EB\'E5\'F1\'E0 \'EF\'F0\'EE\'EA\'F0\'F3\'F2\'EA\'E8 \'EC\'FB\'F8\'E8. \'D2\'F0\'E5\'E1\'F3\'E5\'F2\'F1\'FF \'E2\'E2\'EE\'E4 \'F2\'EE\'EB\'FC\'EA\'EE \'EF\'EE \'E2\'E5\'F0\'F2\'E8\'EA\'E0\'EB\'FC\'ED\'EE\'E9 \'EE\'F1\'E8 \'EA\'EE\'EB\'E5\'F1\'E0] \par
+}}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'E0 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E5:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Camera.h\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\'CA\'EB\'E0\'F1\'F1 Shader\par \pard\plain 
+{\tc\tcl2 \v Shader}
+{\xe \v Shader}
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'F7\'EB\'E5\'ED\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+{\b Shader} (const char *vertexPath, const char *fragmentPath){\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b use} () const{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setBool} (const std::string &name, bool value) const{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setInt} (const std::string &name, int value) const{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setFloat} (const std::string &name, float value) const{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setVec2} (const std::string &name, const glm::vec2 &value) const{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setVec2} (const std::string &name, float x, float y) const{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setVec3} (const std::string &name, const glm::vec3 &value) const{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setVec3} (const std::string &name, float x, float y, float z) const{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setVec4} (const std::string &name, const glm::vec4 &value) const{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setVec4} (const std::string &name, float x, float y, float z, float w) const{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setMat2} (const std::string &name, const glm::mat2 &mat) const{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setMat3} (const std::string &name, const glm::mat3 &mat) const{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+void {\b setMat4} (const std::string &name, const glm::mat4 &mat) const{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+\'CE\'F2\'EA\'F0\'FB\'F2\'FB\'E5 \'E0\'F2\'F0\'E8\'E1\'F3\'F2\'FB\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+
+unsigned int {\b ID}{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\'CE\'E1\'FA\'FF\'E2\'EB\'E5\'ED\'E8\'FF \'E8 \'EE\'EF\'E8\'F1\'E0\'ED\'E8\'FF \'F7\'EB\'E5\'ED\'EE\'E2 \'EA\'EB\'E0\'F1\'F1\'E0 \'ED\'E0\'F5\'EE\'E4\'FF\'F2\'F1\'FF \'E2 \'F4\'E0\'E9\'EB\'E5:{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+ShaderProgram.h\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\'D4\'E0\'E9\'EB\'FB{\tc \v \'D4\'E0\'E9\'EB\'FB}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Camera.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef CAMERA_H}\par
+2 {\cf21 #define CAMERA_H}\par
+3 \par
+4 {\cf21 #include <glad/glad.h>}\par
+5 {\cf21 #include <glm/glm.hpp>}\par
+6 {\cf21 #include <glm/gtc/matrix_transform.hpp>}\par
+7 {\cf21 #include <vector>}\par
+8 \par
+9 \par
+10 {\cf17 enum} Movement_Direction\par
+11 \{\par
+12     FORWARD,\par
+13     BACKWARD,\par
+14     LEFT,\par
+15     RIGHT\par
+16 \};\par
+17 \par
+18 {\cf17 const} GLfloat YAW = -90.0f;\par
+19 {\cf17 const} GLfloat PITCH = 0.0f;\par
+20 {\cf17 const} GLfloat SPEED = 2.5f;\par
+21 {\cf17 const} GLfloat SENSITIVITY = 0.1f;\par
+22 {\cf17 const} GLfloat ZOOM = 45.0f;\par
+23 \par
+29 {\cf17 class }Camera\par
+30 \{\par
+31 {\cf17 public}:\par
+32     {\cf20 // \'E0\'F2\'F0\'E8\'E1\'F3\'F2\'FB \'EA\'E0\'EC\'E5\'F0\'FB}\par
+33     glm::vec3 Position;\par
+34     glm::vec3 Front;\par
+35     glm::vec3 Up;\par
+36     glm::vec3 Right;\par
+37     glm::vec3 WorldUp;\par
+38     {\cf20 // \'F3\'E3\'EB\'FB \'DD\'E9\'EB\'E5\'F0\'E0}\par
+39     GLfloat Yaw;\par
+40     GLfloat Pitch;\par
+41     {\cf20 // \'EF\'E0\'F0\'E0\'EC\'E5\'F2\'F0\'FB \'EA\'E0\'EC\'E5\'F0\'FB}\par
+42     GLfloat MovementSpeed;\par
+43     GLfloat MouseSensitivity;\par
+44     GLfloat Zoom;\par
+45 \par
+49     Camera(glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f), GLfloat yaw = YAW, GLfloat pitch = PITCH) : Front(glm::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(SPEED), MouseSensitivity(SENSITIVITY), Zoom(ZOOM)\par
+50     \{\par
+51         Position = position;\par
+52         WorldUp = up;\par
+53         Yaw = yaw;\par
+54         Pitch = pitch;\par
+55         updateCameraVectors();\par
+56     \}\par
+57 \par
+61     Camera(GLfloat posX, GLfloat posY, GLfloat posZ, GLfloat upX, GLfloat upY, GLfloat upZ, GLfloat yaw, GLfloat pitch) : Front(glm::vec3(0.0f, 0.0f, -1.0f)), MovementSpeed(SPEED), MouseSensitivity(SENSITIVITY), Zoom(ZOOM)\par
+62     \{\par
+63         Position = glm::vec3(posX, posY, posZ);\par
+64         WorldUp = glm::vec3(upX, upY, upZ);\par
+65         Yaw = yaw;\par
+66         Pitch = pitch;\par
+67         updateCameraVectors();\par
+68     \}\par
+69 \par
+73     glm::mat4 GetViewMatrix()\par
+74     \{\par
+75         {\cf19 return} glm::lookAt(Position, Position + Front, Up);\par
+76     \}\par
+77 \par
+81     {\cf18 void} ProcessKeyboard(Movement_Direction direction, GLfloat deltaTime)\par
+82     \{\par
+83         GLfloat velocity = MovementSpeed * deltaTime;\par
+84         {\cf19 if} (direction == FORWARD)\par
+85             Position = Position + Front * velocity;\par
+86         {\cf19 if} (direction == BACKWARD)\par
+87             Position -= Front * velocity;\par
+88         {\cf19 if} (direction == LEFT)\par
+89             Position -= Right * velocity;\par
+90         {\cf19 if} (direction == RIGHT)\par
+91             Position += Right * velocity;\par
+92     \}\par
+93 \par
+97     {\cf18 void} ProcessMouseMovement(GLfloat xoffset, GLfloat yoffset, GLboolean constrainPitch = {\cf17 true})\par
+98     \{\par
+99         xoffset *= MouseSensitivity;\par
+100         yoffset *= MouseSensitivity;\par
+101 \par
+102         Yaw += xoffset;\par
+103         Pitch += yoffset;\par
+104 \par
+105         {\cf20 // \'F3\'E1\'E5\'E4\'E8\'F2\'E5\'F1\'FC, \'F7\'F2\'EE \'EF\'F0\'E8 \'EF\'F0\'E5\'E2\'FB\'F8\'E5\'ED\'E8\'E8 \'E2\'FB\'F1\'EE\'F2\'FB \'F2\'EE\'ED\'E0 \'FD\'EA\'F0\'E0\'ED \'ED\'E5 \'EF\'E5\'F0\'E5\'E2\'EE\'F0\'E0\'F7\'E8\'E2\'E0\'E5\'F2\'F1\'FF}\par
+106         {\cf19 if} (constrainPitch)\par
+107         \{\par
+108             {\cf19 if} (Pitch > 89.0f)\par
+109                 Pitch = 89.0f;\par
+110             {\cf19 if} (Pitch < -89.0f)\par
+111                 Pitch = -89.0f;\par
+112         \}\par
+113 \par
+114         {\cf20 // \'EE\'E1\'ED\'EE\'E2\'EB\'FF\'E5\'F2 \'EF\'E5\'F0\'E5\'E4\'ED\'E8\'E9, \'EF\'F0\'E0\'E2\'FB\'E9 \'E8 \'E2\'E5\'F0\'F5\'ED\'E8\'E9 \'E2\'E5\'EA\'F2\'EE\'F0\'FB, \'E8\'F1\'EF\'EE\'EB\'FC\'E7\'F3\'FF \'EE\'E1\'ED\'EE\'E2\'EB\'E5\'ED\'ED\'FB\'E5 \'F3\'E3\'EB\'FB \'DD\'E9\'EB\'E5\'F0\'E0}\par
+115         updateCameraVectors();\par
+116     \}\par
+117 \par
+121     {\cf18 void} ProcessMouseScroll(GLfloat yoffset)\par
+122     \{\par
+123         Zoom -= (GLfloat)yoffset;\par
+124         {\cf19 if} (Zoom < 1.0f)\par
+125             Zoom = 1.0f;\par
+126         {\cf19 if} (Zoom > 45.0f)\par
+127             Zoom = 45.0f;\par
+128     \}\par
+129 \par
+130 {\cf17 private}:\par
+134     {\cf18 void} updateCameraVectors()\par
+135     \{\par
+136         {\cf20 // \'E2\'FB\'F7\'E8\'F1\'EB\'E8\'F2\'E5 \'ED\'EE\'E2\'FB\'E9 \'E2\'E5\'EA\'F2\'EE\'F0 \'F4\'F0\'EE\'ED\'F2\'E0}\par
+137         glm::vec3 front;\par
+138         front.x = cos(glm::radians(Yaw)) * cos(glm::radians(Pitch));\par
+139         front.y = sin(glm::radians(Pitch));\par
+140         front.z = sin(glm::radians(Yaw)) * cos(glm::radians(Pitch));\par
+141         Front = glm::normalize(front);\par
+142         {\cf20 // \'F2\'E0\'EA\'E6\'E5 \'EF\'E5\'F0\'E5\'F1\'F7\'E8\'F2\'E0\'E9\'F2\'E5 \'E2\'E5\'EA\'F2\'EE\'F0 \'E2\'EF\'F0\'E0\'E2\'EE \'E8 \'E2\'E2\'E5\'F0\'F5}\par
+143         Right = glm::normalize(glm::cross(Front, WorldUp));  {\cf20 // \'ED\'EE\'F0\'EC\'E0\'EB\'E8\'E7\'F3\'E9\'F2\'E5 \'E2\'E5\'EA\'F2\'EE\'F0\'FB, \'EF\'EE\'F2\'EE\'EC\'F3 \'F7\'F2\'EE \'E8\'F5 \'E4\'EB\'E8\'ED\'E0 \'F1\'F2\'E0\'ED\'EE\'E2\'E8\'F2\'F1\'FF \'E1\'EB\'E8\'E6\'E5 \'EA 0, \'F7\'E5\'EC \'E1\'EE\'EB\'FC\'F8\'E5 \'E2\'FB \'F1\'EC\'EE\'F2\'F0\'E8\'F2\'E5 \'E2\'E2\'E5\'F0\'F5 \'E8\'EB\'E8 \'E2\'ED\'E8\'E7, \'F7\'F2\'EE \'EF\'F0\'E8\'E2\'EE\'E4\'E8\'F2 \'EA \'E7\'E0\'EC\'E5\'E4\'EB\'E5\'ED\'E8\'FE \'E4\'E2\'E8\'E6\'E5\'ED\'E8\'FF.}\par
+144         Up = glm::normalize(glm::cross(Right, Front));\par
+145     \}\par
+146 \};\par
+147 \par
+148 {\cf21 #endif}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+ShaderProgram.h\par \pard\plain 
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+{
+\pard\plain \s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 1 {\cf21 #ifndef SHADER_H}\par
+2 {\cf21 #define SHADER_H}\par
+3 \par
+4 {\cf21 #include <glad/glad.h>}\par
+5 {\cf21 #include <glm/glm.hpp>}\par
+6 \par
+7 {\cf21 #include <string>}\par
+8 {\cf21 #include <fstream>}\par
+9 {\cf21 #include <sstream>}\par
+10 {\cf21 #include <iostream>}\par
+11 {\cf21 #include <unordered_map>}\par
+12 \par
+13 {\cf17 class }Shader\par
+14 \{\par
+15 {\cf17 public}:\par
+16     {\cf18 unsigned} {\cf18 int} ID;\par
+17     {\cf20 // \'EA\'EE\'ED\'F1\'F2\'F0\'F3\'EA\'F2\'EE\'F0 \'E3\'E5\'ED\'E5\'F0\'E8\'F0\'F3\'E5\'F2 \'F8\'E5\'E9\'E4\'E5\'F0}\par
+18     Shader({\cf17 const} {\cf18 char}* vertexPath, {\cf17 const} {\cf18 char}* fragmentPath)\par
+19     \{\par
+20         {\cf20 // 1. retrieve the vertex/fragment source code from filePath}\par
+21         std::string vertexCode;\par
+22         std::string fragmentCode;\par
+23         std::ifstream vShaderFile;\par
+24         std::ifstream fShaderFile;\par
+25         {\cf20 // ensure ifstream objects can throw exceptions:}\par
+26         vShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);\par
+27         fShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);\par
+28         {\cf19 try}\par
+29         \{\par
+30             {\cf20 // open files}\par
+31             vShaderFile.open(vertexPath);\par
+32             fShaderFile.open(fragmentPath);\par
+33             std::stringstream vShaderStream, fShaderStream;\par
+34             {\cf20 // read file's buffer contents into streams}\par
+35             vShaderStream << vShaderFile.rdbuf();\par
+36             fShaderStream << fShaderFile.rdbuf();\par
+37             {\cf20 // close file handlers}\par
+38             vShaderFile.close();\par
+39             fShaderFile.close();\par
+40             {\cf20 // convert stream into string}\par
+41             vertexCode = vShaderStream.str();\par
+42             fragmentCode = fShaderStream.str();\par
+43         \}\par
+44         {\cf19 catch} (std::ifstream::failure& e)\par
+45         \{\par
+46             std::cout << {\cf22 "ERROR::SHADER::FILE_NOT_SUCCESFULLY_READ: "} << e.what() << std::endl;\par
+47         \}\par
+48         {\cf17 const} {\cf18 char}* vShaderCode = vertexCode.c_str();\par
+49         {\cf17 const} {\cf18 char}* fShaderCode = fragmentCode.c_str();\par
+50         {\cf20 // 2. compile shaders}\par
+51         {\cf18 unsigned} {\cf18 int} vertex, fragment;\par
+52         {\cf20 // vertex shader}\par
+53         vertex = glCreateShader(GL_VERTEX_SHADER);\par
+54         glShaderSource(vertex, 1, &vShaderCode, NULL);\par
+55         glCompileShader(vertex);\par
+56         checkCompileErrors(vertex, {\cf22 "VERTEX"});\par
+57         {\cf20 // fragment Shader}\par
+58         fragment = glCreateShader(GL_FRAGMENT_SHADER);\par
+59         glShaderSource(fragment, 1, &fShaderCode, NULL);\par
+60         glCompileShader(fragment);\par
+61         checkCompileErrors(fragment, {\cf22 "FRAGMENT"});\par
+62         {\cf20 // shader Program}\par
+63         ID = glCreateProgram();\par
+64         glAttachShader(ID, vertex);\par
+65         glAttachShader(ID, fragment);\par
+66         glLinkProgram(ID);\par
+67         checkCompileErrors(ID, {\cf22 "PROGRAM"});\par
+68         {\cf20 // delete the shaders as they're linked into our program now and no longer necessery}\par
+69         glDeleteShader(vertex);\par
+70         glDeleteShader(fragment);\par
+71 \par
+72     \}\par
+73     {\cf20 // activate the shader}\par
+74     {\cf18 void} use(){\cf17  const}\par
+75 {\cf17     }\{\par
+76         glUseProgram(ID);\par
+77     \}\par
+78 \par
+79      {\cf18 void} setBool({\cf17 const} std::string& name, {\cf18 bool} value){\cf17  const}\par
+80 {\cf17     }\{\par
+81         glUniform1i(glGetUniformLocation(ID, name.c_str()), ({\cf18 int})value);\par
+82     \}\par
+83 \par
+84     {\cf18 void} setInt({\cf17 const} std::string& name, {\cf18 int} value){\cf17  const}\par
+85 {\cf17     }\{\par
+86         glUniform1i(glGetUniformLocation(ID, name.c_str()), value);\par
+87     \}\par
+88     \par
+89     {\cf18 void} setFloat({\cf17 const} std::string& name, {\cf18 float} value){\cf17  const}\par
+90 {\cf17     }\{\par
+91         glUniform1f(glGetUniformLocation(ID, name.c_str()), value);\par
+92     \}\par
+93     \par
+94     {\cf18 void} setVec2({\cf17 const} std::string& name, {\cf17 const} glm::vec2& value){\cf17  const}\par
+95 {\cf17     }\{\par
+96         glUniform2fv(glGetUniformLocation(ID, name.c_str()), 1, &value[0]);\par
+97     \}\par
+98     {\cf18 void} setVec2({\cf17 const} std::string& name, {\cf18 float} x, {\cf18 float} y){\cf17  const}\par
+99 {\cf17     }\{\par
+100         glUniform2f(glGetUniformLocation(ID, name.c_str()), x, y);\par
+101     \}\par
+102     \par
+103     {\cf18 void} setVec3({\cf17 const} std::string& name, {\cf17 const} glm::vec3& value){\cf17  const}\par
+104 {\cf17     }\{\par
+105         glUniform3fv(glGetUniformLocation(ID, name.c_str()), 1, &value[0]);\par
+106     \}\par
+107 \par
+108     {\cf18 void} setVec3({\cf17 const} std::string& name, {\cf18 float} x, {\cf18 float} y, {\cf18 float} z){\cf17  const}\par
+109 {\cf17     }\{\par
+110         glUniform3f(glGetUniformLocation(ID, name.c_str()), x, y, z);\par
+111     \}\par
+112     \par
+113     {\cf18 void} setVec4({\cf17 const} std::string& name, {\cf17 const} glm::vec4& value){\cf17  const}\par
+114 {\cf17     }\{\par
+115         glUniform4fv(glGetUniformLocation(ID, name.c_str()), 1, &value[0]);\par
+116     \}\par
+117 \par
+118     {\cf18 void} setVec4({\cf17 const} std::string& name, {\cf18 float} x, {\cf18 float} y, {\cf18 float} z, {\cf18 float} w){\cf17  const}\par
+119 {\cf17     }\{\par
+120         glUniform4f(glGetUniformLocation(ID, name.c_str()), x, y, z, w);\par
+121     \}\par
+122     \par
+123     {\cf18 void} setMat2({\cf17 const} std::string& name, {\cf17 const} glm::mat2& mat){\cf17  const}\par
+124 {\cf17     }\{\par
+125         glUniformMatrix2fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &mat[0][0]);\par
+126     \}\par
+127     \par
+128     {\cf18 void} setMat3({\cf17 const} std::string& name, {\cf17 const} glm::mat3& mat){\cf17  const}\par
+129 {\cf17     }\{\par
+130         glUniformMatrix3fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &mat[0][0]);\par
+131     \}\par
+132     \par
+133     {\cf18 void} setMat4({\cf17 const} std::string& name, {\cf17 const} glm::mat4& mat){\cf17  const}\par
+134 {\cf17     }\{\par
+135         glUniformMatrix4fv(glGetUniformLocation(ID, name.c_str()), 1, GL_FALSE, &mat[0][0]);\par
+136     \}\par
+137 \par
+138 {\cf17 private}:\par
+139     {\cf20 // \'F1\'EB\'F3\'E6\'E5\'E1\'ED\'E0\'FF \'F4\'F3\'ED\'EA\'F6\'E8\'FF \'E4\'EB\'FF \'EF\'F0\'EE\'E2\'E5\'F0\'EA\'E8 \'EE\'F8\'E8\'E1\'EE\'EA \'EA\'EE\'EC\'EF\'E8\'EB\'FF\'F6\'E8\'E8/\'EA\'EE\'EC\'EF\'EE\'ED\'EE\'E2\'EA\'E8 \'F8\'E5\'E9\'E4\'E5\'F0\'EE\'E2.}\par
+140     {\cf18 void} checkCompileErrors(GLuint shader, std::string type)\par
+141     \{\par
+142         GLint success;\par
+143         GLchar infoLog[1024];\par
+144         {\cf19 if} (type != {\cf22 "PROGRAM"})\par
+145         \{\par
+146             glGetShaderiv(shader, GL_COMPILE_STATUS, &success);\par
+147             {\cf19 if} (!success)\par
+148             \{\par
+149                 glGetShaderInfoLog(shader, 1024, NULL, infoLog);\par
+150                 std::cout << {\cf22 "ERROR::SHADER_COMPILATION_ERROR of type: "} << type << {\cf22 "\\n"} << infoLog << {\cf22 "\\n"} << std::endl;\par
+151             \}\par
+152         \}\par
+153         {\cf19 else}\par
+154         \{\par
+155             glGetProgramiv(shader, GL_LINK_STATUS, &success);\par
+156             {\cf19 if} (!success)\par
+157             \{\par
+158                 glGetProgramInfoLog(shader, 1024, NULL, infoLog);\par
+159                 std::cout << {\cf22 "ERROR::PROGRAM_LINKING_ERROR of type: "} << type << {\cf22 "\\n"} << infoLog << {\cf22 "\\n"} << std::endl;\par
+160             \}\par
+161         \}\par
+162     \}\par
+163 \};\par
+164 \par
+165 {\cf21 #endif}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC\par 
+\pard\plain 
+{\tc \v \'C0\'EB\'F4\'E0\'E2\'E8\'F2\'ED\'FB\'E9 \'F3\'EA\'E0\'E7\'E0\'F2\'E5\'EB\'FC}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}
