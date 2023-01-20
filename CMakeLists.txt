@@ -34,7 +34,7 @@ file(GLOB sources
     include/*.c
 )
 
-include_directories("include" "depen" "depen/GLAD" "sources" "glfw" "glm")
+include_directories("include" "depen" "depen/GLAD" "sources" "glfw" "glm" "shaders" "textures")
 
 add_executable(${PROJECT_NAME} ${glm} ${glad} ${glfw} ${sources} ${include})
 SET_TARGET_PROPERTIES(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE C)
@@ -47,6 +47,24 @@ add_subdirectory(glad)
 add_subdirectory(GLFW)
 add_subdirectory(stb)
 target_link_libraries(${PROJECT_NAME} glfw stb)
+
+include(GNUInstallDirs)
+
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
+install(TARGETS ${PROJECT_NAME} DESTINATION ./exefile)
+install(FILES shaders/8.3.cpuheight.fs
+shaders/8.3.cpuheight.vs DESTINATION ./shaders)
+install(FILES textures/1.png
+textures/2.png
+textures/3.png
+textures/4.png
+textures/5.png
+textures/6.png
+ DESTINATION ./textures)
 
 set_target_properties(${EDITOR_PROJECT_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++0x")
