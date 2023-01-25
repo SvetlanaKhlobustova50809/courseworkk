@@ -20,14 +20,18 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 void processInput(GLFWwindow* window);
+void OnMouseButtonClicked(GLFWwindow* window, int button, int action, int mods);
 
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 int useWireframe = 0;
 int displayGrayscale = 0;
 static bool keys[1024];
+static bool g_captureMouse = true;
+static bool g_capturedMouseJustNow = false;
 
 Camera camera(glm::vec3(67.0f, 627.5f, 169.9f), glm::vec3(0.0f, 1.0f, 0.0f), -128.1f, -42.4f);
+Camera camera1(glm::vec3(6.0f, 6.5f, 16.9f), glm::vec3(0.0f, 1.0f, 0.0f), -128.1f, -42.4f);
 GLfloat lastX = SCR_WIDTH / 2.0f;
 GLfloat lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
@@ -157,6 +161,7 @@ int main(int argc, char* argv[])
     glfwSetKeyCallback(window, key_callback);
     glfwSetCursorPosCallback(window, mouse_callback);
     glfwSetScrollCallback(window, scroll_callback);
+    glfwSetMouseButtonCallback(window, OnMouseButtonClicked);
 
     // говорит GLFW о том, чтобы захватить мышь
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
@@ -219,6 +224,12 @@ int main(int argc, char* argv[])
         glm::mat4 view = camera.GetViewMatrix();
         heightMapShader.setMat4("projection", projection);
         heightMapShader.setMat4("view", view);
+        //heightMapShader.use();
+
+        //projection = glm::perspective(glm::radians(camera1.Zoom), (GLfloat)SCR_WIDTH / (GLfloat)SCR_HEIGHT, 0.1f, 100000.0f);
+        //view = camera1.GetViewMatrix();
+        //heightMapShader.setMat4("projection", projection);
+        //heightMapShader.setMat4("view", view);
 
         // world transformation
         glm::mat4 model = glm::mat4(1.0f);
@@ -288,7 +299,23 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos)
     lastX = xpos;
     lastY = ypos;
 
-    camera.ProcessMouseMovement(xoffset, yoffset);
+    if (g_captureMouse)
+        camera.ProcessMouseMovement(xoffset, yoffset);
+}
+void OnMouseButtonClicked(GLFWwindow* window, int button, int action, int mods)
+{
+    if (button == GLFW_MOUSE_BUTTON_RIGHT && action == GLFW_RELEASE)
+        g_captureMouse = !g_captureMouse;
+
+
+    if (g_captureMouse)
+    {
+        glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+        g_capturedMouseJustNow = true;
+    }
+    else
+        glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+
 }
 
 // Обработка вращения колесика мыши
